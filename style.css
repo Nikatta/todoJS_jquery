@@ -50,7 +50,7 @@ ul, ol {
     color: white;
     text-decoration:line-through;
     font-family: 'Courier New', Courier, monospace;
-    
+
 }
 
 .radius {
@@ -76,7 +76,6 @@ ul, ol {
 .todo {
     padding-top: 8px;
     padding-bottom: 8px;
-
     display: block;
     width: 100%;
     text-decoration: none;
@@ -108,7 +107,4 @@ li:hover .destroy {
     text-decoration: none;
     float: right;
     color: #800000;
-    text-shadow: 0 0 5px #D9B2B2;
-
-}
-// border-bottom: solid 1px #eeeeee;
+    text-shadow: 0 0 5px #D9B2B2
