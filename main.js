@@ -32,7 +32,7 @@ $(function () {
             pagination();
     });
     //delete all
-    $("body").on('click', '.clear-done', function() {
+    $("body").on('click', '.btn-danger', function() {
         mainArray = _.filter(mainArray, ['checked', false]);
         pagination();
     });
@@ -165,8 +165,10 @@ function render(page) {
         mainList += `<li id='${el.id}' class='${className} ${classSkobka} oneli'>
         <div class='col-xs-4 col-md-1'><input type='checkbox' class='toggle'></span></div>
         <div class='col-xs-4 col-md-9'><p class='todo-label' style='text-align: center'>${el.text}</p></div>
-        <div class='col-xs-4 col-md-2'><span class='input-group-btn'><button class='destroy btn btn-danger' type='button'>x</button></span></li>`;
+        <div class='col-xs-4 col-md-2'> <a style='text-decoration: none; font-size:25px;' href="#" class="remove todo destroy ">x</a></span></li>`;
     });
     $('#list').append(mainList);
     $('li.supercsscheck .toggle').prop('checked', true);
 }
+
+//<div class='col-xs-4 col-md-2'><span class='input-group-btn'><button class='destroy btn btn-danger' type='button'>x</button>

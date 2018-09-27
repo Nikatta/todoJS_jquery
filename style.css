@@ -61,6 +61,7 @@ ul, ol {
 .oneli {
     padding-bottom: 10px;
     padding-top: 10px;
+
 }
 
 .writing {
@@ -71,3 +72,43 @@ ul, ol {
     background-color: red;
     outline: none;
 }
+
+.todo {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+.remove {
+    float: right;
+    color: #ffe8e9;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.todo:hover .remove {
+    text-decoration: none;
+    float: right;
+    color: #800000;
+    text-shadow: 0 0 5px #D9B2B2;
+
+}
+a {
+    text-decoration: none;
+    padding: 0px;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+li:hover .destroy {
+    text-decoration: none;
+    float: right;
+    color: #800000;
+    text-shadow: 0 0 5px #D9B2B2;
+
+}
+// border-bottom: solid 1px #eeeeee;
