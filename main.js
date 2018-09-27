@@ -160,9 +160,8 @@ function render(page) {
     let mainList = "";
     $("#list").empty();
     activeArray.forEach(function(el){
-        const classSkobka = (el.id) == 0 ? 'radius' : '';
         const className = (el.checked) ? 'supercsscheck' : 'supercss';
-        mainList += `<li id='${el.id}' class='${className} ${classSkobka} oneli'>
+        mainList += `<li id='${el.id}' class='${className}  oneli'>
         <div class='col-xs-4 col-md-1'><input type='checkbox' class='toggle'></span></div>
         <div class='col-xs-4 col-md-9'><p class='todo-label' style='text-align: center'>${el.text}</p></div>
         <div class='col-xs-4 col-md-2'> <a style='text-decoration: none; font-size:25px;' href="#" class="remove todo destroy ">x</a></span></li>`;
@@ -171,4 +170,3 @@ function render(page) {
     $('li.supercsscheck .toggle').prop('checked', true);
 }
 
-//<div class='col-xs-4 col-md-2'><span class='input-group-btn'><button class='destroy btn btn-danger' type='button'>x</button>

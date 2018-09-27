@@ -29,10 +29,14 @@ body {
     color: black;
    text-align: center;
    list-style-type: none;
+
    
 }
 ul, ol {
     margin-top: 20px;
+    overflow:hidden;
+    border-radius: 9px 9px 9px 9px;
+
 }
 
 .supercss {
@@ -53,10 +57,7 @@ ul, ol {
 
 }
 
-.radius {
-    border-radius: 9px 9px 0 0;
 
-}
 
 .oneli {
     padding-bottom: 10px;
@@ -107,4 +108,11 @@ li:hover .destroy {
     text-decoration: none;
     float: right;
     color: #800000;
-    text-shadow: 0 0 5px #D9B2B2
+    text-shadow: 0 0 5px #D9B2B2;
+}
+
+.count {
+    margin: 5px;
+    margin-top: 5px;
+
+}
