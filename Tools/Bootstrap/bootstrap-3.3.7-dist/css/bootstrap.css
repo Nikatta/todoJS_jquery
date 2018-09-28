@@ -245,9 +245,9 @@ th {
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
   }
-  .label {
-    border: 1px solid #000;
-  }
+  /*.label {*/
+    /*border: 1px solid #000;*/
+  /*}*/
   .table {
     border-collapse: collapse !important;
   }
@@ -3345,17 +3345,22 @@ fieldset[disabled] .btn-warning.focus {
   color: #fff;
   background-color: #d9534f;
   border-color: #d43f3a;
+  outline: none;
+
+
 }
 .btn-danger:focus,
 .btn-danger.focus {
   color: #fff;
   background-color: #c9302c;
   border-color: #761c19;
+  outline: none;
 }
 .btn-danger:hover {
   color: #fff;
   background-color: #c9302c;
   border-color: #ac2925;
+  outline: none;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -3363,6 +3368,7 @@ fieldset[disabled] .btn-warning.focus {
   color: #fff;
   background-color: #c9302c;
   border-color: #ac2925;
+  outline: none;
 }
 .btn-danger:active:hover,
 .btn-danger.active:hover,
@@ -4710,7 +4716,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination {
   display: inline-block;
-  padding-left: 0;
+  padding-left: 80px;
   margin: 20px 0;
   border-radius: 4px;
 }

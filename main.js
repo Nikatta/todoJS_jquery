@@ -1,6 +1,6 @@
 let mainArray = [];
 let id = 0;
-const post_per_page = 10;
+const post_per_page = 7;
 $(function () {
 
     //Добавление по кнопке
