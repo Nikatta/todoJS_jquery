@@ -47,20 +47,20 @@ $(function () {
         pagination();
     });
     //двойной клик
-    $("body").on('dblclick', '.todo-label', function() {       //обращаясь к body, по (двойному нажатию на текст новой ли) Ф
-        let originalTodo = $(this).text();               //переменная originlTodo  = этот текст
-        $(this).addClass("editing");                    //this, добавить класс editing
-        $(this).html("<input class='edittodo' type='text' id='edit' value='" + originalTodo + "' />"); //this, берем текст, id и значение из инпута html +созданная переменная
-        $(this).children().focus();                      //фокусировка на дочерних элементах
-        const liforcheck = $(this).parents('li').attr('id'); //переменная liforcheck  = this родительским Ли и атрибутам id
-        let newTodo = $(this).text();   //переменная newtodo   =  этот текст
-        $(this).children().keyup(function (){  //эти  - обращение к дочерним от this, ключ - функция
-             if (event.keyCode==13) {    // если (код ключа - 13 (enter))
-                 editTodo(newTodo, liforcheck);    //editTodo *функция* (переменная newToDo и константа loforcheck)
+    $("body").on('dblclick', '.todo-label', function() {
+        let originalTodo = $(this).text();
+        $(this).addClass("editing");
+        $(this).html("<input class='edittodo' type='text' id='edit' value='" + originalTodo + "' />");
+        $(this).children().focus();
+        const liforcheck = $(this).parents('li').attr('id');
+        let newTodo = $(this).text();
+        $(this).children().keyup(function (){
+             if (event.keyCode==13) {
+                 editTodo(newTodo, liforcheck);
              }
          });
-         $(this).children().first().blur(function (){   //this дочерние первый  вызов события
-             editTodo(newTodo, liforcheck);   //функция editTodo (переменные)
+         $(this).children().first().blur(function (){
+             editTodo(newTodo, liforcheck);
          });
         Addtodo();
     });
@@ -118,7 +118,7 @@ function detectArray() {
     return _.filter(mainArray, ['checked', checked]);
     pagination();
 }
-//paginator nagibator
+//pagination
 function pagination(flagPage) {
     const numberOfItems = mainArray.length;
     const page_count = Math.ceil(numberOfItems / post_per_page);
